@@ -31,7 +31,7 @@ RUN git clone -b master https://github.com/raspberrypi/pico-examples
 RUN git clone -b master https://github.com/raspberrypi/picotool \
       && cd picotool \
       && mkdir build && cd build \
-      && cmake .. && make -j4
+      && cmake .. && make -j
 
 RUN git clone -b master https://github.com/raspberrypi/picoprobe
 

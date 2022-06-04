@@ -10,7 +10,7 @@ image: ## Build image
 container: ## Create container
 	podman run -dt --name $(CONTAINER) \
       --volume /home/viny/PodmanVolumes/pipico:/home/viny/pipico:Z,U \
-      --group-add keep-groups --volume /dev/bus/usb:/dev/bus/usb \
+      --volume /dev/bus/usb:/dev/bus/usb \
       localhost/$(IMAGE)
 
 clean: ## Delete container
