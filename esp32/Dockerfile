@@ -2,7 +2,7 @@ FROM debian:bullseye-slim
 
 RUN apt-get update \
       && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
-            vim git wget \
+            vim git wget minicom \
             flex bison gperf python3 python3-venv cmake make \
             ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
 

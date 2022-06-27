@@ -10,6 +10,7 @@ image: ## Build image
 container: ## Create container
 	podman run -dt --name $(CONTAINER) \
       --volume /home/viny/PodmanVolumes/$(CONTAINER):/home/viny/volume:Z,U \
+	  --device /dev/ttyUSB0 --annotation run.oci.keep_original_groups=1 \
       localhost/$(IMAGE)
 
 clean: ## Delete container
