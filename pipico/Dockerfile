@@ -14,6 +14,7 @@ COPY doas.conf /etc/doas.d/doas.conf
 USER viny
 
 ENV PICO_SDK_PATH=/home/viny/pico/pico-sdk
+ENV PICO_PLATFORM=rp2040
 
 RUN mkdir /home/viny/pico
 WORKDIR /home/viny/pico
